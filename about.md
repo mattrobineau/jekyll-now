@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi!
 
-### More Information
+My name is Matt and I have been developing ASP.Net applications for 5 years now.
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm very excited about .Net Core. I started this blog to express some of the pain points I've had with using .Net Core in the hopes that this may be useful for others who have stumbled upon these issues/problems.
