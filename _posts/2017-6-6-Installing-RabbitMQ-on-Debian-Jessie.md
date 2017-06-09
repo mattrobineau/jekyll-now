@@ -7,7 +7,7 @@ I have recently found myself in need of a message broker for my current project.
 of message brokers and messaging queues in general, I have settled on using RabbitMQ.
 
 <h2>Simplest way to install RabbitMQ</h2>
-Direct from the (RabbitMQ Documentation)[https://www.rabbitmq.com/install-debian.html].
+Direct from the [RabbitMQ Documentation](https://www.rabbitmq.com/install-debian.html).
 We'll be using `sudo` here. If you do not have it installed, you can either install it and give your
 user rights, or run the commands (after `sudo`) as root. It is recommended to use sudo, but I wont be angry if you don't.
 
@@ -24,4 +24,4 @@ sudo apt-get install rabbitmq-server
 
 And that's pretty much it. 
 
-Make sure to (configure)[https://www.rabbitmq.com/configure.html] your new `RabbitMQ` install.
+Make sure to [configure](https://www.rabbitmq.com/configure.html) your new `RabbitMQ` install.
