@@ -6,11 +6,11 @@ title: Installing .Net Core version 1.0.5/1.1.2 from tarball
 Scott Hanselman recently blogged [Trying .NET Core on Linux with just a tarball (without apt-get)](https://www.hanselman.com/blog/TryingNETCoreOnLinuxWithJustATarballWithoutAptget.aspx).
 One of the comments posted on the article was by `Matt` (not me):
 
-![FYI, all the tarball links point to v1.0.4 instead of v1.0.5 or v1.1.2]({{ site.url }}/images/post/2017-6-9/Comment_On_Post.PNG)
+![FYI, all the tarball links point to v1.0.4 instead of v1.0.5 or v1.1.2]({{ site.url }}/images/posts/2017-6-9/Comment_On_Post.PNG)
 
 Matt's comment is not entirely true. All the SDK links are v1.0.4. However, all the runtime tarballs are v1.0.5.
 
-![Highlighted Runtime download list]({{ site.url }}/images/post/2017-6-9/net_core_tarball_list.PNG)
+![Highlighted Runtime download list]({{ site.url }}/images/posts/2017-6-9/net_core_tarball_list.PNG)
 
 Scott does a very good job explaining how to install .Net Core from a tarball. The post was written about a concern about wanting to have
 .Net Core installed in one location rather than it going everywhere. Scott's instructions on dealing with this are good but I would like
@@ -18,7 +18,7 @@ to point out that Microsoft's own instructions are also valid with one exception
 
 The exception being that Microsoft's documentation still points to a v1.0.4.
 
-![Microsoft download instructions -- debian]({{ site.url }}/images/post/2017-6-9/microsoft_install_instructions.PNG)
+![Microsoft download instructions -- debian]({{ site.url }}/images/posts/2017-6-9/microsoft_install_instructions.PNG)
 
 The Microsoft documentation should be updated to:
 
