@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LINQ to Entites Pitfalls
-published: false
+published: true
 ---
 
 I've been using LINQ to Entites with Entity Framework for a long time. I wanted to share some of the pitfalls or costly operations which you should avoid. 
