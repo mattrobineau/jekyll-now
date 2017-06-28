@@ -86,3 +86,7 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-minimal
+
+# jekyll-feed setting
+feed:
+  path: feed.xml
