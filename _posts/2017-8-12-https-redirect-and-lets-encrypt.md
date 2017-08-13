@@ -2,6 +2,7 @@
 layout: post
 title: HTTPS Redirects and Let's Encrypt Renewals
 published: true
+excerpt: I have a site that requires SSL. The website in question needs to only use HTTPS for all requests because sensitive information is being transfered over the wire and because SSL is good!
 ---
 
 I have a site that requires SSL. The website in question needs to only use HTTPS for all requests because sensitive information is being transfered over the wire and [because SSL is good!](https://www.troyhunt.com/dont-take-security-advice-from-seo-experts-or-psychics-neil-patel/). I decided the best route was to force SSL redirects in nginx. I don't want users of the site to pass any information over an insecure channel.
