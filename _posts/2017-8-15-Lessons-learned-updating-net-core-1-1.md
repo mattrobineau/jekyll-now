@@ -38,6 +38,12 @@ I found out (and regretted not creating a branch) that Npgsql does not currently
 
 In all of the projects, set your target framework to `<TargetFramework>netcoreapp2.0</TargetFramework>` and remove or update the `RuntimeFrameworkVersion`. The .Net Core 2.0 nuget packages will not update if these are not changed.
 
+##Breaking changes##
+
+.Net Core 2.0 has deprecated the use of `IApplicationBuilder.UseCookieAuthentication` which will give you a build error. It has been replaced with `Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions.AddAuthentication`. You can find the relevant information in (this github ticket](https://github.com/aspnet/Security/issues/1310). 
+
+I haven't run into other .Net Core related breaking changes, but I would not be surprised that there are more of them. Luckily it is easy to identify as it will show up in your build's error list.
+
 ##Updating nuget packages##
 
 This was probably the most painful part since many nuget packages reference one another, updating the packages might fail when package A references package B. It can be a nightmare if you have a lot of nuget packages. Most of the updates to the nuget packages consisted of failing to update a group of packages until 1 package worked (usually the base, but not always) and then updating the rest. On the main web project, I manually removed the packages and re-add each one using the higher version. This seemed the easiest and simplest solution. Especially when you don't know that package X supports .Net Core 2.0 (eg: NLog doesn't support 2.0 yet).
@@ -51,3 +57,4 @@ Sources:
 [Announcing ASP.NET Core 2.0](https://blogs.msdn.microsoft.com/webdev/2017/08/14/announcing-asp-net-core-2-0/)
 [.NET Standard 2.0 vs .NET Core 2.0](https://github.com/dotnet/standard/blob/master/docs/comparisons/netstandard2.0_vs_netcoreapp2.0/README.md)
 [Announcing Entity Framework Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0/)
+[[Draft] Auth 2.0 Migration announcement](https://github.com/aspnet/Security/issues/1310)
