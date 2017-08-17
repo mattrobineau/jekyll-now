@@ -30,7 +30,7 @@ EF will now allow you to create a pool of connections that your `dbContext` will
 
 I made a mistake of not creating a branch before starting to update packages and projects to .Net Core 2.0. I ended up with issues updating the packages and decided I needed a branch.
 
-##Not all of the nuget packages you use will support .Net Core 2.0##
+## Not all of the nuget packages you use will support .Net Core 2.0 ##
 
 I found out (and regretted not creating a branch) that Npgsql does not currently support .Net Core 2.0. Their preview nuget package will install, however there is a runtime error due to missing implementations. Watch [this github thread](https://github.com/npgsql/Npgsql.EntityFrameworkCore.PostgreSQL/issues/171) if you require Npgsql in your application. Hopefully it will be reopened with current comments.
 
