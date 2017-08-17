@@ -22,11 +22,11 @@ EF will now allow you to create a pool of connections that your `dbContext` will
 
 - Like query operator
 
-`EF.Functions.Life(c.Name, "a%")` will use the SQL `LIKE` operator in queries.
+`EF.Functions.Like(c.Name, "a%")` will use the SQL `LIKE` operator in queries.
 
 # Lessons learned from updating to Core 2.0
 
-##Branch!##
+## Branch! ##
 
 I made a mistake of not creating a branch before starting to update packages and projects to .Net Core 2.0. I ended up with issues updating the packages and decided I needed a branch.
 
@@ -34,11 +34,11 @@ I made a mistake of not creating a branch before starting to update packages and
 
 I found out (and regretted not creating a branch) that Npgsql does not currently support .Net Core 2.0. Their preview nuget package will install, however there is a runtime error due to missing implementations. Watch [this github thread](https://github.com/npgsql/Npgsql.EntityFrameworkCore.PostgreSQL/issues/171) if you require Npgsql in your application. Hopefully it will be reopened with current comments.
 
-##Set your target framework##
+## Set your target framework ##
 
 In all of the projects, set your target framework to `<TargetFramework>netcoreapp2.0</TargetFramework>` and remove or update the `RuntimeFrameworkVersion`. The .Net Core 2.0 nuget packages will not update if these are not changed.
 
-##Updating nuget packages##
+## Updating nuget packages ##
 
 This was probably the most painful part since many nuget packages reference one another, updating the packages might fail when package A references package B. It can be a nightmare if you have a lot of nuget packages. Most of the updates to the nuget packages consisted of failing to update a group of packages until 1 package worked (usually the base, but not always) and then updating the rest. On the main web project, I manually removed the packages and re-add each one using the higher version. This seemed the easiest and simplest solution. Especially when you don't know that package X supports .Net Core 2.0 (eg: NLog doesn't support 2.0 yet).
 
