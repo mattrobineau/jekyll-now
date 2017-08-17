@@ -46,8 +46,8 @@ This was probably the most painful part since many nuget packages reference one 
 
 Updating to 2.0 wasn't very painful or long. The longest part will be waiting to for the nuget packages my project depends on to support .Net Core 2.0. Until then, the best course of action is to continue implementing features/improvements on .Net Core 1.1 and watching out for when the packages are supported.
 
-Sources:
-[Announcing .NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/)
-[Announcing ASP.NET Core 2.0](https://blogs.msdn.microsoft.com/webdev/2017/08/14/announcing-asp-net-core-2-0/)
-[.NET Standard 2.0 vs .NET Core 2.0](https://github.com/dotnet/standard/blob/master/docs/comparisons/netstandard2.0_vs_netcoreapp2.0/README.md)
-[Announcing Entity Framework Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0/)
+Sources:  
+[Announcing .NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/)  
+[Announcing ASP.NET Core 2.0](https://blogs.msdn.microsoft.com/webdev/2017/08/14/announcing-asp-net-core-2-0/)  
+[.NET Standard 2.0 vs .NET Core 2.0](https://github.com/dotnet/standard/blob/master/docs/comparisons/netstandard2.0_vs_netcoreapp2.0/README.md)  
+[Announcing Entity Framework Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0/)  
